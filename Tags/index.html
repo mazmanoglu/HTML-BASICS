@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    In HTML, we have 2 kinds of tags
+    - Normal tags
+    - Self-closing tags
+    <br>
+    <p>Normal tags</p>
+    <h1>H1 title</h1>
+    <p>Common tags</p>
+    <p>Page structure</p>
+    <header> header of the page </header>
+    <main> main content of the page </main>
+    <footer> foot of the page </footer>
+    <p>Types of titles</p>
+    <h1>h1 title </h1>
+    <h2>h2 title </h2>
+    <h3>h3 title </h3>
+    <h4>h4 title </h4>
+    <h5>h5 title </h5>
+    <h6>h6 title </h6>
+    <p>containers</p>
+    <div> generic container - div </div>
+    <p> paragraph - p </p>
+    <pre>
+Pre element
+        Text in a &lt;pre&gt; element
+                is displayed in a fixed-width
+            font, and it preserves
+        both      spaces and
+        line breaks. The text will be displayed exactly as written in the HTML source code.
+    </pre>
+    <p>inline container</p>
+    <span> inline - span (after span, use br to break the line)</span><br>
+    <a href="https://www.google.com"> google with href</a>
+
+    <a href="https://www.google.com" target="_blank">google _blank</a><br>
+    <a href="https://www.google.com" target="_self">google _self</a><br>
+    <a href="https://www.google.com" target="_parent">google _parent</a><br>
+    <a href="https://www.google.com" target="_top">google _top</a><br>
+    <a href="https://www.google.com" target="framename">google framename</a><br>
+    <h1>Tables</h1>
+    <p>An HTML table has two kinds of cells:</p>
+        <ul>
+            <li>Header cells - contains header information (created with the &lt;th&gt; element)
+            </li>
+            <li>Data cells - contains data (created with the &lt;td&gt; element)</li>
+        </ul>
+    <p>The text in &lt;th&gt; elements are bold and centered by default.</p>
+    <p>The text in &lt;td&gt; elements are regular and left-aligned by default.</p>
+    <table> table structure &lt;table&gt;</table><br>
+    <thead> table head (group) &lt;thead&gt;</thead><br>
+    <tbody> table body (group) &lt;tbody&gt;</tbody><br>
+    <tfoot> table footer (group) &lt;tfoot&gt;</tfoot><br>
+    <tr> table row &lt;tr&gt;</tr><br>
+    <td> table data &lt;td&gt;</td><br>
+    <th> header cell use this inside thead/mark cell as header cell &lt;th&gt; </th><br>
+    <h1>A - Anchor tag (link tag)</h1>
+    <h2>Definition and Usage</h2>
+    <p>The <code class="w3-codespan">&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.</p>
+<p>The most important attribute of the <code class="w3-codespan">&lt;a&gt;</code> element is the <code class="w3-codespan">
+href</code> attribute, which indicates the link's destination.</p>
+<p>By default, links will appear as follows in all browsers:</p>
+    <ul>
+        <li>An unvisited link is underlined and blue</li>
+        <li>A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>
+    </ul>
+<hr>
+<p>The <code class="w3-codespan">&lt;a&gt;</code> tag also supports the <a href="https://www.w3schools.com/tags/ref_standardattributes.asp">Global Attributes</a> and <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Event Attributes</a> in HTML.</p>
+<hr>
+<h2>Tips and Notes</h2>
+<p><strong>Tip:</strong> If the <code class="w3-codespan">&lt;a&gt;</code> tag has no <code class="w3-codespan">
+href</code> attribute, it is only a placeholder for a hyperlink.</p>
+<p><b>Tip:</b> A linked page is normally displayed in the current browser window, unless you specify another target.</p>
+<p><b>Tip:</b> Use CSS to style links: <a href="https://www.w3schools.com/css/css_link.asp">CSS Links</a> 
+and <a href="https://www.w3schools.com/css/css3_buttons.asp">CSS Buttons</a>.</p>
+<hr>
+<h2>Attributes</h2>
+<table>
+    <tr>
+        <th style="width:20%">Attribute</th>
+        <th style="width:20%">Value</th>
+        <th>Description</th>
+    </tr>
+    <tr style="color:red;">
+        <td>download</td>
+        <td><i>filename</i></td>
+        <td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+    </tr>
+    <tr style="color: blue;">
+        <td>href</td>
+        <td><i>URL</i></td>
+        <td>Specifies the URL of the page the link goes to</td>
+    </tr>
+    <tr style="color: green;">
+        <td>hreflang</td>
+        <td><i>language_code</i></td>
+        <td>Specifies the language of the linked document</td>
+    </tr>
+    <tr style="color: purple;">
+        <td>media</td>
+        <td><i>media_query</i></td>
+        <td>Specifies what media/device the linked document is optimized for</td>
+    </tr>
+    <tr style="color: orange;">
+        <td>ping</td>
+        <td><em>list_of_URLs</em></td>
+        <td>Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.</td>
+    </tr>
+    <tr style="color:darkred;">
+        <td>referrerpolicy</td>
+        <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+        <td>Specifies which referrer information to send with the link</td>
+    </tr>
+    <tr style="color: darkblue;">
+        <td>rel</td>
+        <td>alternate<br>
+            author<br>
+            bookmark<br>
+            external<br>
+            help<br>
+            license<br>
+            next<br>
+            nofollow<br>
+            noreferrer<br>
+            noopener<br>
+            prev<br>
+            search<br>
+            tag</td>
+        <td>Specifies the relationship between the current document and the linked document</td>
+    </tr>
+    <tr style="color:darkgreen;">
+        <td>target</td>
+        <td>_blank<br>
+            _parent<br>
+            _self<br>
+            _top<br>
+            framename
+        </td>
+        <td>
+            Opens the linked document in a new window or tab<br>
+            Opens the link or document in the parent window or tab.<br>
+            Opens the link or document in the same window or tab, this is the default option when we don't define a target.<br>
+            This opens the link or document in the main screen at the maximum size.<br>
+            This opens the link or document in the frame of the same name.
+        </td>
+    </tr>
+    <tr style="color:red;">
+        <td>type</td>
+        <td><i>media_type</i></td>
+        <td>Specifies the media type of the linked document</td>
+    </tr>
+</table>
+<hr>
+<h1>IMAGES</h1>
+<img src="helloooo.jpg" width="30%" height="auto" >
+<hr>
+<h1>Self Closing tags</h1>
+<p>Line break &lt;br&gt;<br>Comment &lt;!--comment here--&gt;</p>
+</body>
+</html>

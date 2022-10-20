@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <h2>The HTML &lt;audio&gt; Element</h2>
+    <p>To play an audio file in HTML, use the &lt;audio&gt; element:</p>
+    <h2>HTML Audio - How It Works</h2>
+    <p>The &lt;controls&gt; attribute adds audio controls, like play, pause, and volume.</p>
+    <p>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+    <p>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</p>
+    <hr>
+    <h2>HTML &lt;audio&gt; Autoplay</h2>
+    <p>To start an audio file automatically, use the -autoplay- attribute</p>
+    <p>Add -muted- after -autoplay- to let your audio file start playing automatically (but muted)
+    </p>
+    <p><strong>Note:</strong><i>Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</i>
+    </p>
+    <p>Audio element with controls</p>
+    <audio controls>
+        <source src="src/audio.ogg" type="audio/ogg">
+    </audio>
+
+    <p>Audio element with autoplay</p>
+    <audio controls autoplay>
+        <source src="src/audio.ogg" type="audio/ogg">
+    </audio>
+
+    <p>Audio element with autoplay and muted</p>
+    <audio controls autoplay muted>
+        <source src="src/audio.ogg" type="audio/ogg">
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        A semantic element describes the meaning of the element to the browser but also to the developer.
+
+        The <div> and <span> are elements that have no meaning, they tell nothing about the content. 
+
+        Elements like <form>, <table>, <article> literally tell what the content will be. A tag like <article> has the same properties as a <div> it just has more context about the content.
+        
+        Semantische tags
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>
+    -->
+
+    <img src="semantic-tree.png" width="30%" height="auto" title="helllllooooo">
+    <br>
+    <p>-------Section tag---------</p>
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+    <p>------Article tag----------</p>
+    <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <section>
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+    </section>
+    <!--No difference between with section and without section -->
+    <article>
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+    <article class="film_review">
+        <h2>Jurassic Park</h2>
+        <section class="main_review">
+            <h3>Review</h3>
+            <p>Dinos were great!</p>
+        </section>
+        <section class="user_reviews">
+            <h3>User reviews</h3>
+            <article class="user_review">
+                <h4>Too scary!</h4>
+                <p>Way too scary for me.</p>
+                <footer>
+                    <p>
+                        Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+                    </p>
+                </footer>
+            </article>
+            <article class="user_review">
+                <h4>Love the dinos!</h4>
+                <p>I agree, dinos are my favorite.</p>
+                <footer>
+                    <p>
+                        Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+                    </p>
+                </footer>
+            </article>
+        </section>
+        <footer>
+            <p>
+                Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+            </p>
+        </footer>
+    </article>
+    <p>-------Aside tag---------</p>
+    <article>
+        <p>
+            The Disney movie <cite>The Little Mermaid</cite> was first released to theatres in 1989.
+        </p>
+        <aside>
+            <p>
+                The movie earned $87 million during its initial release.
+            </p>
+        </aside>
+        <p>
+            More info about the movie…
+        </p>
+    </article>
+</body>
+</html>
