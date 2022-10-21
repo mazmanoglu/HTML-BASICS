@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <p>Form is an HTML element with which we can receive input from the user, we can use in a form various interactive elements such as: "Text input", "numbers", "values", "email" and "password" where the user can enter information. In addition to the alphanumeric input, we also have "checkboxes", "radio buttons" and "buttons" that we can add to a form.</p>
+    <h3>Example</h3>
+    <form action="#" target="_self">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label>Male<input type="radio" name="gender" value="male"/>
+        </label> 
+        <label>Female<input type="radio" name="gender" value="female"/> 
+        </label><br>
+        <input type="checkbox" name="language" value="Dutch"/>Dutch<br>
+        <input type="checkbox" name="language" value="French"/>French<br>
+        <input type="checkbox" name="language" value="German"/>German<br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"><br>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <p><strong>Note:</strong> The hidden field is not shown to the user, but the data is sent when the form is submitted.</p>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br>
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+        <p><strong>Note: </strong>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+        </p>
+    </form>
+    <hr>
+    <h3>Example 2</h3>
+    <form action="postdata.php">
+        <fieldset>
+            <legend>
+                LOGIN SECTION
+            </legend>
+            <input type="text" placeholder="username" required/></br>
+            <input type="password" placeholder="password" required /></br>
+            <label>City:</label>
+            <select>
+                <option value="Aalst">Aalst</option>
+                <option value="Brussels">Brussels</option>
+            </select></br>
+            <label>Permission:</label>
+            <select>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select></br>
+            <input type="hidden" value="hiddenValueuniquekey"/>
+            <input type="submit" value="SEND IT!">
+        </fieldset>
+    </form>
+    <hr>
+    <p><strong>Action attribute</strong><br>We can also add an action attribute to the form, which we use to indicate the destination of the content. This can be an absolute or relative URL.<br>For Example &lt;form action="test.php" method="post"&gt;</p>
+    <p><strong>Method attribute</strong><br>In addition to the action attribute, there is also the method. This will determine what HTTP request will be used <br>GET: Used to request data from a specified source.<br>POST: Used to send data to a server.<br>For Example &lt;form action="test.php" method="post"&gt;</p>
+    
+    <hr>
+    <p>The HTML &lt;form&gt; element can contain one or more of the following form elements:</p>
+    <h2>HTML Form Elements</h2>
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;input&gt;-----></td>
+            <td>With this tag we can create alphanumeric input fields, checkboxes and radio buttons.</td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;--></td>
+            <td>Defines a multiline input control (text area). This tag creates a text field where the user can enter long text.</td>
+        </tr>
+        <tr>
+            <td>&lt;label&gt;-----></td>
+            <td>This shows text associated with the &lt;input&gt; element such as password, username, etc.</td>
+        </tr>
+        <tr>
+            <td>&lt;fieldset&gt;--></td>
+            <td>This tag will draw a box around a group of elements.</td>
+        </tr>
+        <tr>
+            <td>&lt;legend&gt;---></td>
+            <td>This has a subscript for elements in a &lt;fieldset&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt;----></td>
+            <td>Defines a drop-down list</td>
+        </tr>
+        <tr>
+            <td>&lt;optgroup&gt;-></td>
+            <td>Defines a group of related options in a drop-down list. We will use this tag to define a group of options.</td>
+        </tr>
+        <tr>
+            <td>&lt;option&gt;---></td>
+            <td>This tag is used to add an option to a dropdown
+                list such as &lt;select&gt; or &lt;datalist&gt;.</td>
+        </tr>
+        <tr>
+            <td>&lt;button&gt;---></td>
+            <td>This tag creates a button to perform other functionality such as submitting the form.</td>
+        </tr>
+        <tr>
+            <td>&lt;datalist&gt;--></td>
+            <td>The datalist is similar to the select. You can select an
+                item from a list, but as a user you also have the option to write text yourself</td>
+        </tr>
+        <tr>
+            <td>&lt;output&gt;---></td>
+            <td>The output tag will return a value from an operation (the result of a calculation)</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>HTML Input Types</h2>
+    <p>Here are the different input types you can use in HTML:</p>
+    <ul>
+        <li><code class="w3-codespan">&lt;input type=&quot;button&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;checkbox&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;color&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;date&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;datetime-local&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;email&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;file&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;hidden&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;image&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;month&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;number&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;password&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;radio&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;range&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;reset&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;search&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;submit&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;tel&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;text&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;time&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;url&quot;&gt;</code></li>
+        <li><code class="w3-codespan">&lt;input type=&quot;week&quot;&gt;</code></li>
+    </ul>
+    <p><strong>Tip:</strong> The default value of the type attribute is &quot;text&quot;. &lt;input type="text" /&gt; or the shorthand for text: &lt;input /&gt;</p>
+    <hr>
+
+</body>
+</html>
